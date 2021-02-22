@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/tabla.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/all.min.css">
+<script src="jquery/jquery-1.6.3.js"></script>
+<script src="jquery/jquery.easing.1.3.js"></script>
+<script src="js/inventario.js"></script>
+</head>
+<body>
+    <div class="contenedor"> <!--INICIO CONTENEDOR-->
+	<!---PRIMERA SRECCIÓN-->
+	    <header class="fila"> <!--INICIO FILA HEADER-->
+	        <div class="logo col-lg-2 col-md-2 col-sm-3 col-xs-12"> <!--INCIO DIV LOGO-->	
+			    Comercializadora y distribuidora<br> <span>Martinez</span>
+		    </div> <!--FIN DIV LOGO-->
+		    <div class="busqueda col-lg-5 col-md-5 col-sm-8 col-xs-10"> <!--INICIO DIV BUSQUEDA-->
+			    <i id="menu" class="fas fa-bars"></i>
+			    <i class="fas fa-expand-arrows-alt"></i> 
+			    <input type="search" class="fontawesome" placeholder=" Busqueda...">
+			    <div class="boton">
+				    <a href="">
+					    <i class="fas fa-search"></i>
+				    </a>
+			    </div>
+		    </div> <!--FIN DIV BUSQUEDA-->
+		    <div style="height:50px;" class="col-lg-3 col-md-3 col-sm-0 col-xs-0"> <!--DIV VACÍO-->
+		    </div><!--FIN DIV VACÍO-->
+		    <div class="usuario col-lg-2 col-md-2 col-sm-1 col-xs-2"> <!--INICIO DIV USUARIO-->
+		        <img src="imgs/icon_4.png">
+		    </div><!--FIN DIV USUARIO-->
+	    </header> <!--FIN FILA HEADER-->
+	    <!--SEGUNDA SECCIÓN------->
+	    <div class="fila"> <!--INICIO FILA SEGUNDA SECCIÓN-->
+	        <nav id="nav" class="col-lg-3 col-md-3 col-sm-4 col-xs-7"> <!--INICIO NAV MENU-->
+		        <ul class="ul-menu">
+		            <li class="main">MAIN</li>
+					<li id="Tablero"><a href="#"><i class="fas fa-anchor"></i></i>Tablero</a>
+					<li id="Proveedoras"><a href="#"><i class="fas fa-parachute-box"></i>Proveedoras</i></a>
+		            <li id="categorias"><a href="#"><i class="fas fa-border-all"></i>Categorías<i id="a" class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+			           <ul>
+			               <li><a href="">Agregar Categorías</a></li>
+			               <li><a href="gestion.html">Gestionar Categorías</a></li>
+			           </ul>
+			        </li>
+					<li id="almacen"><a href="#"><i class="fas fa-warehouse"></i>Almacen</i></a>
+					<li id="productos"><a href="#"><i class="fas fa-shopping-cart"></i></i>Productos</i></a>
+					<li id="productos"><a href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados</i></a>
+		        </ul>
+	        </nav> <!--FIN NAV MENU-->
+	        <div id="informacion" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <!--INCIO DIV INFORMACIÓN-->
+	            <h2>Agregar Categoría</h2>
+		        <div> <!--INICIO DIV-->
+		            <h3>Nueva Categoría</h3>
+		            <p>Use este formulario para agregar categorías a la base de datos</p>
+		            <form>
+			            <label name="categoria">Categoría</label>
+			            <input type="text" name="categoria" placeholder="Categoría"><br>
+		                <input type="button" value="Agregar">
+		            </form>
+		        </div> <!--FIN DIV-->
+	        </div> <!--FIN DIV INFORMACIÓN-->
+	    </div>  <!--FIN FILA SEGUNDA SECCIÓN--> 
+	    <div class="fila">
+	       <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <!--INICIO FOOTER-->
+		       <p>
+			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
+		       </p>
+	           <a href="">Privacidad</a>
+	           <a href="">Terminos</a>
+	           <a href="">Ayuda</a>
+	       </footer> <!--FIN FOOTER-->
+	    </div> 
+    </div> <!--FIN CONTENEDOR-->
+</body>
+</html>
