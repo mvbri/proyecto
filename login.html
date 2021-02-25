@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y registro</title>
+    <link rel="stylesheet" href="css/atomic-design/organism/login.css">
+</head>
+<body>
+
+    <main>
+       <div class="contenedor_principal">
+
+        <!--INICIO CAJA TRASERA CONTENEDORA-->
+
+         <div class="caja_trasera_contenedora">
+
+            <!--INICIO CAJA TRASERA LOGIN-->
+
+            <div class="caja_trasera_login">
+ 
+               <h3>¿Ya tienes una cuenta?</h3>
+               <p>Incia sesión para utilizar a App</p>
+               <button id="btn_inicia_sesion">Iniciar Sesión</button>
+
+            </div>
+
+            <!--FIN CAJA TRASERA LOGIN-->
+
+            <!--------------------------->
+
+            <!--INICIO CAJA TRASERA REGISTRO-->
+
+            <div class="caja_trasera_registro">
+ 
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Registrate para iniciar sesión</p>
+                <button id="btn_registro">Regístrate</button>
+ 
+             </div>
+
+         </div>
+
+         <!--FIN CAJA CONTENEDORA TRASERA-->
+
+         <!-------------------------------->
+
+         <!--INICIO CONTENEDOR DE FORMULARIO LOGIN Y REGISTRO-->
+
+         <div class="contenedor_login_registro">
+
+            <!--INICIO FORMULARIO DE LOGIN-->
+
+            <form method="POST" action="Sesion.php" class="formulario_login">
+
+               <h2>Iniciar sesión</h2>
+               <input type="text" name="login" id="" placeholder="Usuario" required>
+               <input type="password" name="password" id="" placeholder="Contraseña" required>
+               <button>Entrar</button>
+
+            </form>
+            <!--FIN FORMULARIO DE LOGIN-->
+
+            <!----------------------------->
+
+            <!--INCIO FORMULARIO DE REGISTRO-->
+
+            <form method="GET"  action="insertar_registro.php" class="formulario_registro">
+
+                <h2>Regístrarse</h2>
+                <input type="text" name="nombre_c" id="" placeholder="Nombre completo" required>
+                <input type="email" name="correo" id="" placeholder="Ingrese correo">
+                <input type="text" name="nombre_u" id="" placeholder="Nombre de usuario" required>
+                <input type="password" name="contraseña" id="" placeholder="Ingrese contraseña" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" required>
+                <button>Registrarse</button>
+
+            </form>
+
+            <!--FIN FORMULARIO REGISTRO-->
+
+         </div>
+
+         <!--FIN CONTENEDOR REGISTRO-->
+     
+
+       </div>
+
+       <!--FIN CAJA CONTENEDORA PRINCIPAL-->
+
+    </main>
+    <script src="js/pages/login.js"></script>
+</body>
+</html>
