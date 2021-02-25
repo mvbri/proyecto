@@ -7,59 +7,60 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-    <div class="contenedor site">
+    <div class="container-principal site">
 	    <header class="site-header">
-	        <div class="logo">
-			    Comercializadora y distribuidora<br> <span>Martinez</span>
-		    </div>
-		    <div class="busqueda">
-			    <i class="fas fa-expand-arrows-alt"></i> 
-			    <input type="search" class="fontawesome" placeholder=" Busqueda...">
-			    <div class="boton">
-				    <a href="">
-					    <i class="fas fa-search"></i>
-				    </a>
-			    </div>
-		    </div> 
-		    <div>
-		        <img src="imgs/icon_4.png">
-		    </div>
+			<div class="contenedor-logo-search">
+                <div class="logo">
+					<h3 class="text-logo">Comercializadora y distribuidora<br> <span>Martinez</span></h3>
+				</div>
+				<div class="search">
+					<i class="fas fa-expand-arrows-alt"></i> 
+					<input type="search" class="fontawesome" placeholder=" Busqueda...">
+					<div class="boton">
+						<a href="">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div> 
+				<div class="contenedor-img-user">
+					<img class="user-icon" src="imgs/icon_4.png">
+				</div>
+			</div>  
 	    </header>
-	    <div>
-			<input class="hides menu-button" type="checkbox" id="menu-button">
-			<label for="menu-button">
-				<i class="fas fa-bars"></i>
-			</label> 
-	        <nav class="main-menu" id="nav">
-		        <ul class="ul-menu">
-		            <li class="main">MAIN</li>
-					<li id="Tablero"><a href="#"><i class="fas fa-anchor"></i></i>Tablero</a>
-					<li id="Proveedoras"><a href="#"><i class="fas fa-parachute-box"></i>Proveedoras</i></a>
-		            <li id="categorias"><a href="#"><i class="fas fa-border-all"></i>Categorías<i id="a" class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
-			           <ul>
-			               <li><a href="">Agregar Categorías</a></li>
-			               <li><a href="gestion.html">Gestionar Categorías</a></li>
-			           </ul>
-			        </li>
-					<li id="almacen"><a href="#"><i class="fas fa-warehouse"></i>Almacen</i></a>
-					<li id="productos"><a href="#"><i class="fas fa-shopping-cart"></i></i>Productos</i></a>
-					<li id="productos"><a href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados</i></a>
-		        </ul>
-	        </nav>
-	        <div id="informacion">
-	            <h2>Agregar Categoría</h2>
-		        <div>
-		            <h3>Nueva Categoría</h3>
-		            <p>Use este formulario para agregar categorías a la base de datos</p>
-		            <form>
-			            <label name="categoria">Categoría</label>
-			            <input type="text" name="categoria" placeholder="Categoría"><br>
-		                <input type="button" value="Agregar">
-		            </form>
-		        </div>
-	        </div>
-	    </div>
-	    <div>
+		<main class="site-main">
+            <div class="container container-menu-info">
+				<input class="hide menu-button" type="checkbox" id="menu-button">
+				<label for="menu-button">
+					<i class="fas fa-bars"></i>
+				</label> 
+				<nav class="main-menu" id="nav">
+					<ul class="ul-menu">
+						<li class="main">MAIN</li>
+						<li><a class="anchor-menu" href="#"><i class="fas fa-anchor"></i></i>Tablero</a>
+						<li><a class="anchor-menu" href="#"><i class="fas fa-parachute-box"></i>Proveedoras</i></a>
+						<li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-border-all"></i>Categorías<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+						   <ul>
+							   <li><a class="anchor-menu" href="">Agregar Categorías</a></li>
+							   <li><a class="anchor-menu" href="gestion.html">Gestionar Categorías</a></li>
+						   </ul>
+						</li>
+						<li><a class="anchor-menu" href="#"><i class="fas fa-warehouse"></i>Almacen</i></a>
+						<li><a class="anchor-menu" href="#"><i class="fas fa-shopping-cart"></i></i>Productos</i></a>
+						<li><a class="anchor-menu" href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados</i></a>
+					</ul>
+				</nav>
+				<div class="container-information">
+					<h2 class="title-primary">Agregar Categoría</h2>
+					<h3 class="subtitle-primary">Nueva Categoría</h3>
+					<p>Use este formulario para agregar categorías a la base de datos</p>
+					<form class="main-form">
+						<label name="categoria">Categoría:</label>
+						<input type="text" name="categoria" placeholder="Categoría"><br>
+						<input class="button-primary" type="button" value="Agregar">
+					</form>
+				</div>
+			</div>
+		</main>
 	       <footer class="site-footer">
 		       <p>
 			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>

@@ -4,7 +4,7 @@
 
 @import 'atoms/button.css';
 @import 'atoms/checkbox.css';
-@import 'atoms/color.css';
+@import 'atoms/colors.css';
 @import 'atoms/select.css';
 @import 'molecules/form.css';
 @import 'molecules/icons.css';

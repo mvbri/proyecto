@@ -1,10 +1,7 @@
 
 
-/*<!--SEGUNDA SECCIÓN------------->*/
 
-/*---------INICIO DEL MENU-----*/
-
-nav{
+.main-menu{
     width:100%;
     height:100%;
     background:#FFF;
@@ -15,111 +12,120 @@ nav{
     left:-300px;
     min-width: 200px;
     max-width: 245px;
+    min-height: 400px;
     border-radius:8px;
+}
+  
+
+.anchor-menu{
+    display:inline-block;
+    padding:12px 15px 12px 22px;
+    width:100%;
+    color: var(--main-font-color);	
+    font-size:14px;
+}
+ 
+
+.anchor-menu:hover{
+    background:#F2F4F4;
+}
+ 
+
+.fa-anchor{
+    margin-right:10px;
+}
+ 
+
+.fa-address-card{
+    margin-right:10px;
+}
+ 
+
+.fa-border-all{
+    margin-right:10px; 
+}
+ 
+
+.fa-warehouse{
+    margin-right:10px;
+}
+ 
+
+.fa-shopping-cart{
+    margin-right:10px;
+ }
+ 
+
+.fa-user{
+    margin-right:10px;
  }
   
- nav li.main{
-    font-size:11px;
-    padding:12px 18px;
-    color:#909497;  
- }
+
+.fa-users{
+    margin-right:10px;
+}
+ 
+
+.fa-file-invoice{
+    margin-right:10px;
+}
+ 
+
+.fa-file-invoice-dollar{
+    margin-right:10px; 
+}
+ 
+
+.fa-hand-holding-usd{
+    margin-right:10px;
+}
  
  
- nav li a{
-     display:inline-block;
-   padding:12px 15px 12px 22px;
-   width:100%;
-   color:#5F6A6A ;	
-     font-size:14px;
- }
- 
- nav li a:hover{
-     background:#F2F4F4;
- }
- 
- nav li a .fa-anchor{
-     margin-right:10px;
- }
- 
- nav li a .fa-address-card{
-     margin-right:10px;
- }
- 
- nav li a .fa-border-all{
-     margin-right:10px; 
- }
- 
- nav li a .fa-warehouse{
-     margin-right:10px;
- }
- 
- nav li a .fa-shopping-cart{
-     margin-right:10px;
- }
- 
- nav li a .fa-user{
-     margin-right:10px;
- }
-  
- nav li a .fa-users{
-     margin-right:10px;
- }
- 
- nav li a .fa-file-invoice{
-      margin-right:10px;
- }
- 
- nav li a .fa-file-invoice-dollar{
-     margin-right:10px; 
- }
- 
- nav li a .fa-hand-holding-usd{
-      margin-right:10px;
- }
- 
- nav li a .fa-chevron-right{
-     float:right;
-     clear:both;
-   font-size:10px;
-   margin-top:6px;
-   margin-left: 10px;
- }
- 
- /*---ALTERNACIÓN DE ICONOS NAV---*/
- 
- nav li#categorias:hover .fa-chevron-right{
-     display:none;
- }
- 
- nav li#categorias:hover .fa-chevron-down{
-   display:inherit;
-   margin-top:4px;
- }
- 
- /*---------------------------------*/
+.fa-chevron-right{
+    float:right;
+    clear:both;
+    font-size:10px;
+    margin-top:6px;
+    margin-left: 10px;
+}
+
+
+.fa-chevron-down{
+    float:right;
+    clear:both;
+    font-size:10px;
+    visibility: hidden;
+}
  
  
- nav li a .fa-chevron-down{
-     float:right;
-     clear:both;
-     font-size:10px;
-     display:none;
- }
+.despliegue:hover .fa-chevron-right{
+    display:none;
+}
  
- nav ul li ul{
+ 
+.despliegue:hover .fa-chevron-down{
+    visibility: visible;
+    margin-top:4px;
+}
+ 
+ 
+nav ul li ul{
     display:none; 
     position:absolute;
     min-width:140px;
- }
+    transition: all 1s ease-in-out;
+}
  
- nav ul li ul a{
-     padding-left:40px;
- }
+
+.anchor-menu{
+    padding-left:40px;
+}
  
- nav ul li:hover > ul{
-   display:block;
-   position:relative;
- }
+
+.ul-menu li:hover > ul{
+    display:block;
+    position:relative;
+}
  
- /*---------FIN DEL MENU-----*/
+
  

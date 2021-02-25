@@ -10,14 +10,14 @@
 }
 
 body{
-     background-image: url(../imgs/store-4156934_1280.png); 
+     background-image: url(../../../imgs/fondo_login.png); 
      background-size: cover;
      background-repeat: repeat; 
      background-position: center;
 } 
 
 
-main{
+.main-login{
     width: 100%;
     padding: 20px;
     margin: auto;

@@ -5,3 +5,45 @@
 .hide {
     display: none;
 }
+
+
+.title-primary {
+    font-weight: bold;
+}
+
+
+.title-secondary {
+    font-weight: bold;
+}
+
+
+.subtitle-primary {
+    font-weight: bold;
+}
+
+
+.button-primary {
+    color: var(--main-button-color);
+    background: var(--main-bg-button-color);
+    padding: 5px 15px;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.text-logo {
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+}
+
+
+h2 {
+    font-size: var(--font-size-lg);
+}
+
+
+p {
+    font-size: var(--font-size-md);
+}
