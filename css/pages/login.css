@@ -17,6 +17,14 @@ body{
 } 
 
 
+.title-login {
+    text-align: center;
+    color: #363a3a;
+    background: rgba(227, 226, 226, .5);
+    padding: 1em;
+}
+
+
 .link-password-recovery,
 .link-user-recovery {
     display: inline-block;
@@ -133,6 +141,7 @@ body{
     font-size: 16px;
     outline:none;
     border-radius: 10px;
+    border: 1px solid #E3E2E2;
     transition: all 100ms ease;
 }
 
@@ -159,6 +168,15 @@ body{
     color: #46A2FD;
     border: 2px solid #46A2FD;
     transition: all 300ms;
+}
+
+
+.button-login:active {
+    transform: scale(.9);
+}
+
+.button-caja-trasera:active {
+    transform: scale(.9);
 }
 
 .contenedor_principal .contenedor_login_registro .formulario_login{
@@ -201,5 +219,10 @@ body{
 
     .contenedor_principal .contenedor_login_registro form{
         position: relative;
+    }
+
+
+    .button-login {
+       margin: 10px;
     }
 }
