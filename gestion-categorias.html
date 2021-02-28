@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" href="css/pages/core.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div class="container-principal site">
+	    <header class="site-header">
+			<div class="contenedor-logo-search">
+                <div class="logo">
+					<h3 class="text-logo">Comercializadora y distribuidora<br> <span>Martinez</span></h3>
+				</div>
+				<div class="search">
+					<i class="fas fa-expand-arrows-alt"></i> 
+					<input type="search" class="fontawesome" placeholder=" Busqueda...">
+					<div class="boton">
+						<a href="">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div> 
+				<div class="contenedor-img-user">
+					<img class="user-icon" src="imgs/icon_4.png">
+				</div>
+			</div>  
+	    </header>
+		<main class="site-main">
+            <section class="container container-menu-info">
+				<input class="hide menu-button" type="checkbox" id="menu-button">
+				<label for="menu-button">
+					<i class="fas fa-bars"></i>
+				</label> 
+                <nav class="main-menu">
+					<ul class="ul-menu">
+						<li class="main">MAIN</li>
+						<li><a class="anchor-menu" href="index.html"><i class="fas fa-anchor"></i></i>Tablero</a>
+						<li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-parachute-box"></i>Proveedoras<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="registrar-proveedoras.html">Registrar Proveedora</a></li>
+                                <li><a class="anchor-menu" href="gestionar-proveedoras.html">Gestionar Proveedoras</a></li>
+                            </ul>
+                        </li>
+						<li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-border-all"></i>Categorías<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+						   <ul>
+							   <li><a class="anchor-menu" href="agregar-categoria.html">Agregar Categorías</a></li>
+							   <li><a class="anchor-menu" href="gestion-categorias.html">Gestionar Categorías</a></li>
+						   </ul>
+						</li>
+                        <li class="despliegue"><a class="anchor-menu"><i class="fas fa-shopping-cart"></i></i>Productos</i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="agregar-productos.html">Agregar Productos</a></li>
+                                <li><a class="anchor-menu" href="gestionar-productos.html">Gestionar Productos<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></li>
+                            </ul>
+                        <li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="agregar-productos-expirados.html">Agregar Productos Expirados</a></li>
+                                <li><a class="anchor-menu" href="gestionar-productos-expirados.html">Gestionar Productos Expirados</a></li>
+                            </ul>
+						<li><a class="anchor-menu" href="reportes.html">Reportes</i></a>
+                        <li><a class="anchor-menu" href="#">Salir</i></a>
+					</ul>
+				</nav>
+			</section>
+			<section class="container-information-table">
+                <div class="tabla">
+					<table action="conexion_pro.php" cellpadding="5px" border="1" class="table-primary">
+						<tr class="borde_bajo">
+							<td class="td-primary">
+								<label>Código del producto <span class="icon-filter"></span></label>
+							</td>
+							<td>
+								<label>Nombre del producto<span class="icon-filter"></span></label>
+							</td>
+							<td class="td-primary">
+								<label>Categoria<span class="icon-filter"></span></label>
+							</td>
+							<td class="td-primary">
+								<label>Existencias<span class="icon-filter"></span></label>
+							</td>
+							<td class="td-primary">
+								<label>Precio por unidad<span class="icon-filter"></span></label>
+							</td>
+							<td class="td-primary">
+								<label>Unidad por paquete<span class="icon-filter"></span></label>
+							</td>
+							<td class="td-primary">
+								<label>Pedidos<span class="icon-filter"></span></label>
+							</td>
+						</tr>
+						<tr class="bordebajo_otros">
+							<td class="td-secondary">0001</td>
+							<td class="td-secondary">
+								<label>Producto 1</label>
+							</td>
+							<td class="td-secondary">
+								<label>Categoria 1</label>
+							</td>
+							<td class="td-secondary">
+								<label>1</label>
+							</td>
+							<td class="td-secondary">
+								<label>1$</label>
+							</td>
+							<td class="td-secondary">
+								<label> 100x1</label>
+							</td>
+							<td class="td-secondary">
+								<label>2</label>
+							</td>
+						</tr>
+						<tr class="bordebajo_otros">
+							<td class="td-secondary">0002</td>
+							<td class="td-secondary">
+								<label>Producto 2</label>
+							</td>
+							<td class="td-secondary">
+								<label>Categoria 2</label>
+							</td>
+							<td class="td-secondary">
+								<label>2</label>
+							</td>
+							<td class="td-secondary">
+								<label>2$</label>
+							</td>
+							<td class="td-secondary">
+								<label>50x1</label>
+							</td>
+							<td class="td-secondary">
+								<label>3</label>
+							</td>
+						</tr>
+						<tr class="bordebajo_otros" >
+							<td class="td-secondary">0003</td>
+							<td class="td-secondary">
+								<label>Producto 3</label>
+							</td>
+							<td class="td-secondary">
+								<label>Categoria 3</label>
+							</td>
+							<td class="td-secondary">
+								<label>3</label>
+							</td>
+							<td class="td-secondary">
+								<label>3$</label>
+							</td>
+							<td class="td-secondary">
+								<label>20x1</label>
+							</td>
+							<td class="td-secondary">
+								<label>1</label>
+							</td>
+						</tr>
+						<tr class="bordebajo_otros">
+							<td class="td-secondary">0004</td>
+							<td class="td-secondary">
+								<label>Producto 4</label>
+							</td>
+							<td class="td-secondary">
+								<label>Categoria 4</label>
+							</td>
+							<td class="td-secondary">
+								<label>4</label>
+							</td>
+							<td class="td-secondary">
+								<label>4$</label>
+							</td>
+							<td class="td-secondary">
+								<label>10x1</label>
+							</td>
+							<td class="td-secondary">
+								<label>1</label>
+							</td>
+						</tr>
+						<tr class="bordebajo_otros">
+							<td class="td-secondary">0005</td>
+							<td class="td-secondary">
+								<label>Producto 5</label>
+							</td>
+							<td class="td-secondary">
+								<label>Categoria 5</label>
+							</td>
+							<td class="td-secondary">
+								<label>5</label>
+							</td>
+							<td class="td-secondary">
+								   label>5$</label>
+							</td>
+							<td class="td-secondary">
+								<label>100x1</label>
+							</td>
+							<td class="td-secondary">
+								<label>2</label>
+							</td>
+						</tr>	
+					</table>
+					<a href="conexion_pro.php">Tabla</a>   
+				</div>
+			</section>    
+		</main>
+	       <footer class="site-footer">
+		       <p>
+			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
+		       </p>
+	           <a href="">Privacidad</a>
+	           <a href="">Terminos</a>
+	           <a href="">Ayuda</a>
+	       </footer>
+	    </div> 
+    </div>
+</body>
+</html>

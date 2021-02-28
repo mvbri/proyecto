@@ -48,12 +48,29 @@ body {
     min-height: 85px;
     border-radius: 100px;
     position: absolute;
-    top: -31%;
+    top: 13%;
     right: 8%;
 }
 
 
-.contenedor-img-user {
+.menu-secondary {
+    display: none;
+    position: absolute;
+    left: 54%;
+    bottom: -150%;
+    background: var(--secondary-bg-color);
+    padding: 1em;
+    border-radius: 50px;
+    transition: all 5ms ease;
+}
+
+
+.ver-perfil:checked ~ .menu-secondary {
+    display: block;
+}
+
+
+.container-img-user {
     position: relative;
 }
 
@@ -63,6 +80,12 @@ body {
     top: 9%;
     left: 32%;
     font-size: 19px;
+}
+
+
+.site-main {
+  display: grid;
+  gap: 1em;
 }
 
 

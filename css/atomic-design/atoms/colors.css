@@ -2,8 +2,11 @@
 
 
 :root {
+    --secondary-bg-color: #fff;
     --main-bg-color: rgba(97, 151, 255, .2);
     --main-font-color: #5F6A6A;
     --main-button-color: #fff;
-    --main-bg-button-color: #4282FC;
+    --main-bg-button-color: #2196F3;
+    --main-color-hover-button: rgba(48, 111, 161, 0.7);
+    --required-color: red;
 }

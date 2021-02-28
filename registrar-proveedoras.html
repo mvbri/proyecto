@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" href="css/pages/core.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div class="container-principal site">
+	    <header class="site-header">
+			<div class="contenedor-logo-search">
+                <div class="logo">
+					<h3 class="text-logo">Comercializadora y distribuidora<br> <span>Martinez</span></h3>
+				</div>
+				<div class="search">
+					<i class="fas fa-expand-arrows-alt"></i> 
+					<input type="search" class="fontawesome" placeholder=" Busqueda...">
+					<div class="boton">
+						<a href="">
+							<i class="fas fa-search"></i>
+						</a>
+					</div>
+				</div> 
+				<div class="contenedor-img-user">
+					<img class="user-icon" src="imgs/icon_4.png">
+				</div>
+			</div>  
+	    </header>
+		<main class="site-main">
+            <section class="container container-menu-info">
+				<input class="hide menu-button" type="checkbox" id="menu-button">
+				<label for="menu-button">
+					<i class="fas fa-bars"></i>
+				</label> 
+				<nav class="main-menu">
+					<ul class="ul-menu">
+						<li class="main">MAIN</li>
+						<li><a class="anchor-menu" href="index.html"><i class="fas fa-anchor"></i></i>Tablero</a>
+						<li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-parachute-box"></i>Proveedoras<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="registrar-proveedoras.html">Registrar Proveedora</a></li>
+                                <li><a class="anchor-menu" href="gestionar-proveedoras.html">Gestionar Proveedoras</a></li>
+                            </ul>
+                        </li>
+						<li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-border-all"></i>Categorías<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+						   <ul>
+							   <li><a class="anchor-menu" href="agregar-categoria.html">Agregar Categorías</a></li>
+							   <li><a class="anchor-menu" href="gestion-categorias.html">Gestionar Categorías</a></li>
+						   </ul>
+						</li>
+                        <li class="despliegue"><a class="anchor-menu"><i class="fas fa-shopping-cart"></i></i>Productos<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="agregar-productos.html">Agregar Productos</a></li>
+                                <li><a class="anchor-menu" href="gestionar-productos.html">Gestionar Productos</a></li>
+                            </ul>
+                        <li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
+                            <ul>
+                                <li><a class="anchor-menu" href="agregar-productos-expirados.html">Agregar Productos Expirados</a></li>
+                                <li><a class="anchor-menu" href="gestionar-productos-expirados.html">Gestionar Productos Expirados</a></li>
+                            </ul>
+						<li><a class="anchor-menu" href="reportes.html">Reportes</i></a>
+                        <li><a class="anchor-menu" href="#">Salir</i></a>
+					</ul>
+				</nav>
+                <div class="container-form">
+					<h2 class="title-primary">Proveedoras</h3>
+                    <h3 class="title-primary-seconday">Registro de proveedoras</h2>  
+                    <form class="form-seconday" method="get" action="registro_gestion.php"  class="">
+						<div class="contenedor-input-label">
+                            <label for="codigo"><span class="required-color">*</span>Codigo proveedora:</label>
+                            <input class="input-primary" type="text" id="codigo" name="codigo" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="apellido-proveedor"><span class="required-color">*</span>Nombre proveedora:</label>
+							<input class="input-primary" type="text" id="apellido-proveedor" name="apellido-proveedor" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="producto"><span class="required-color">*</span>productos/servicios:</label>
+							<input class="input-primary" type="text" id="producto" name="producto" required><br>
+						</div> 
+                        <div class="contenedor-input-label">
+							<label for="direccion"><span class="required-color">*</span>dirección proveedora:</label>
+							<input class="input-primary" type="text" id="direccion" name="direccion" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="telefono"><span class="required-color">*</span>Telefono de contacto:</label>
+							<input class="input-primary" type="text" id="telefono" name="telefono" required><br>
+						</div>  
+                        <div class="contenedor-input-label">
+							<label for="apellido-proveedor"><span class="required-color">*</span>Nombre encargado:</label>
+							<input class="input-primary" type="text" id="apellido-proveedor" name="apellido-proveedor" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="apellido-proveedor"><span class="required-color">*</span>Apellido:</label>
+							<input class="input-primary" type="text" id="apellido-proveedor" name="apellido-proveedor" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="cedula-personal"><span class="required-color">*</span>Cedula:</label>
+							<input class="input-primary" type="text" id="cedula-personal" name="cedula-personal" required><br>
+						</div>      
+                        <input type="submit" id="registrar" class="button-primary" value="Registrar">
+                    </form>                   
+				</div>
+			</section>
+		</main>
+	       <footer class="site-footer">
+		       <p>
+			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
+		       </p>
+	           <a href="">Privacidad</a>
+	           <a href="">Terminos</a>
+	           <a href="">Ayuda</a>
+	       </footer>
+	    </div> 
+    </div>
+</body>
+</html>

@@ -1,27 +1,16 @@
-table{
-    border: 2px solid cyan;
-    width: 40%;
-    margin:auto;
+.table-primary {
+    width: 100%;
+    background: var(--secondary-bg-color);
+    display: grid;
+    margin: 0 auto;
     border-collapse: collapse;
     table-layout: fixed;
-    padding: 3em 0;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 
-.registrar {
-    display: block;
-    margin: 0 auto;
-    border: none;
-    padding: 7px 12px;
-    background: #2196F3;
-    color: #FFF;
-    margin: 22px 10px 10px 177px;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 250ms;
-}
 
-
-.registrar:hover {
-    opacity:.4;
+.button-primary:hover {
+    opacity: .4;
 }
