@@ -10,11 +10,27 @@
 }
 
 body{
-     background-image: url(../../../imgs/fondo_login.png); 
+     background-image: url(../../imgs/fondo_login.png); 
      background-size: cover;
      background-repeat: repeat; 
      background-position: center;
 } 
+
+
+.link-password-recovery,
+.link-user-recovery {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #2196F3;
+    transition: all 5ms ease;
+}
+
+
+.link-password-recovery:hover,
+.link-user-recovery:hover {
+    color: #5F6A6A;
+}
 
 
 .main-login{
@@ -116,17 +132,33 @@ body{
     background: #f2f2f2;
     font-size: 16px;
     outline:none;
+    border-radius: 10px;
+    transition: all 100ms ease;
 }
 
-.contenedor_principal .contenedor_login_registro form button{
+
+.contenedor_principal .contenedor_login_registro form input:focus{
+    border: 1px solid var(--main-bg-button-color);
+    box-shadow: 4px 1px var(--main-bg-button-color);
+}
+
+.button-login{
     padding: 10px 40px;
-    margin-top: 40px;
     border:none;
     font-size:14px;
     background: #46A2FD;
     color: #FFF;
     cursor: pointer;
     outline: none;
+    margin: 20px 91px 10px;
+}
+
+
+.button-login:hover {
+    background: #fff;
+    color: #46A2FD;
+    border: 2px solid #46A2FD;
+    transition: all 300ms;
 }
 
 .contenedor_principal .contenedor_login_registro .formulario_login{
