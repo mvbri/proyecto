@@ -28,7 +28,7 @@
 			</div>  
 	    </header>
 		<main class="site-main">
-            <section class="container container-menu-info">
+            <div class="container container-menu-info">
 				<input class="hide menu-button" type="checkbox" id="menu-button">
 				<label for="menu-button">
 					<i class="fas fa-bars"></i>
@@ -49,10 +49,10 @@
 							   <li><a class="anchor-menu" href="gestion-categorias.html">Gestionar Categorías</a></li>
 						   </ul>
 						</li>
-                        <li class="despliegue"><a class="anchor-menu"><i class="fas fa-shopping-cart"></i></i>Productos</i></a>
+                        <li class="despliegue"><a class="anchor-menu"><i class="fas fa-shopping-cart"></i></i>Productos<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
                             <ul>
                                 <li><a class="anchor-menu" href="agregar-productos.html">Agregar Productos</a></li>
-                                <li><a class="anchor-menu" href="gestionar-productos.html">Gestionar Productos<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></li>
+                                <li><a class="anchor-menu" href="gestionar-productos.html">Gestionar Productos</a></li>
                             </ul>
                         <li class="despliegue"><a class="anchor-menu" href="#"><i class="fas fa-shopping-cart"></i></i>Productos Expirados<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-down"></i></i></a>
                             <ul>
@@ -63,152 +63,34 @@
                         <li><a class="anchor-menu" href="#">Salir</i></a>
 					</ul>
 				</nav>
-			</section>
-			<section class="container-information-table">
-                <div class="tabla">
-					<table action="conexion_pro.php" cellpadding="5px" border="1" class="table-primary">
-						<tr class="borde_bajo">
-							<td class="td-primary">
-								<label>Código del producto <span class="icon-filter"></span></label>
-							</td>
-							<td>
-								<label>Nombre del producto<span class="icon-filter"></span></label>
-							</td>
-							<td class="td-primary">
-								<label>Categoria<span class="icon-filter"></span></label>
-							</td>
-							<td class="td-primary">
-								<label>Existencias<span class="icon-filter"></span></label>
-							</td>
-							<td class="td-primary">
-								<label>Precio por unidad<span class="icon-filter"></span></label>
-							</td>
-							<td class="td-primary">
-								<label>Unidad por paquete<span class="icon-filter"></span></label>
-							</td>
-							<td class="td-primary">
-								<label>Pedidos<span class="icon-filter"></span></label>
-							</td>
-						</tr>
-						<tr class="bordebajo_otros">
-							<td class="td-secondary">0001</td>
-							<td class="td-secondary">
-								<label>Producto 1</label>
-							</td>
-							<td class="td-secondary">
-								<label>Categoria 1</label>
-							</td>
-							<td class="td-secondary">
-								<label>1</label>
-							</td>
-							<td class="td-secondary">
-								<label>1$</label>
-							</td>
-							<td class="td-secondary">
-								<label> 100x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>2</label>
-							</td>
-						</tr>
-						<tr class="bordebajo_otros">
-							<td class="td-secondary">0002</td>
-							<td class="td-secondary">
-								<label>Producto 2</label>
-							</td>
-							<td class="td-secondary">
-								<label>Categoria 2</label>
-							</td>
-							<td class="td-secondary">
-								<label>2</label>
-							</td>
-							<td class="td-secondary">
-								<label>2$</label>
-							</td>
-							<td class="td-secondary">
-								<label>50x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>3</label>
-							</td>
-						</tr>
-						<tr class="bordebajo_otros" >
-							<td class="td-secondary">0003</td>
-							<td class="td-secondary">
-								<label>Producto 3</label>
-							</td>
-							<td class="td-secondary">
-								<label>Categoria 3</label>
-							</td>
-							<td class="td-secondary">
-								<label>3</label>
-							</td>
-							<td class="td-secondary">
-								<label>3$</label>
-							</td>
-							<td class="td-secondary">
-								<label>20x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>1</label>
-							</td>
-						</tr>
-						<tr class="bordebajo_otros">
-							<td class="td-secondary">0004</td>
-							<td class="td-secondary">
-								<label>Producto 4</label>
-							</td>
-							<td class="td-secondary">
-								<label>Categoria 4</label>
-							</td>
-							<td class="td-secondary">
-								<label>4</label>
-							</td>
-							<td class="td-secondary">
-								<label>4$</label>
-							</td>
-							<td class="td-secondary">
-								<label>10x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>1</label>
-							</td>
-						</tr>
-						<tr class="bordebajo_otros">
-							<td class="td-secondary">0005</td>
-							<td class="td-secondary">
-								<label>Producto 5</label>
-							</td>
-							<td class="td-secondary">
-								<label>Categoria 5</label>
-							</td>
-							<td class="td-secondary">
-								<label>5</label>
-							</td>
-							<td class="td-secondary">
-								   label>5$</label>
-							</td>
-							<td class="td-secondary">
-								<label>100x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>2</label>
-							</td>
-						</tr>	
-					</table>
-					<a href="conexion_pro.php">Tabla</a>   
+				<div class="container-information">
+					<h2 class="title-primary">Categorías</h2>
+                    <table class="table-primary table-categorias">
+                        <tr class="tr-primary">
+                            <td class="td-primary text-center">Categorías</td>
+                        </tr>
+                        <tr class="tr-primary">
+                            <td class="td-primary text-center">1<i class="fas fa-times"></i><i class="far fa-edit"></i></td>
+                        </tr>
+                        <tr class="tr-primary">
+                            <td class="td-primary text-center">1<i class="fas fa-times"></i><i class="far fa-edit"></i></td>
+                        </tr>
+                        <tr class="tr-primary">
+                            <td class="td-primary text-center">1<i class="fas fa-times"></i><i class="far fa-edit"></i></td>
+                        </tr>
+                        <tr class="tr-primary">
+                            <td class="td-primary text-center">1<i class="fas fa-times"></i><i class="far fa-edit"></i></td>
+                        </tr>
+                    </table>
 				</div>
-			</section>    
+			</div>
 		</main>
-	       <footer class="site-footer">
-		       <p>
-			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
-		       </p>
-	           <a href="">Privacidad</a>
-	           <a href="">Terminos</a>
-	           <a href="">Ayuda</a>
-	       </footer>
-	    </div> 
+        <footer class="site-footer">
+            <p>
+              <span>&copy;2020</span> Inventario Adaptable - <span>Comercializadora y distribuidora Martinez</span>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
+

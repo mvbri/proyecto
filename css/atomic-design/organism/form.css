@@ -1,0 +1,25 @@
+
+
+
+.input-primary:focus {
+    border: 1px solid var(--main-bg-button-color);
+    box-shadow: 4px 1px var(--main-bg-button-color);
+}
+
+.button-primary:hover {
+    opacity: .4;
+}
+
+.button-primary:active {
+    opacity: 1;
+}
+
+
+.input-price {
+    max-width: 90px;
+}
+
+
+.input-cantidad {
+   max-width: 80px;
+}

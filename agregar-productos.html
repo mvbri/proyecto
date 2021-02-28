@@ -40,7 +40,7 @@
 				<label for="menu-button">
 					<i class="fas fa-bars"></i>
 				</label> 
-<nav class="main-menu">
+                <nav class="main-menu">
 					<ul class="ul-menu">
 						<li class="main">MAIN</li>
 						<li><a class="anchor-menu" href="index.html"><i class="fas fa-anchor"></i></i>Tablero</a>
@@ -82,10 +82,30 @@
 							<label for="nombre-producto"><span class="required-color">*</span>Descripción/nombre producto:</label>
 							<input class="input-primary" type="text" id="nombre-producto" name="nombre-producto" required><br>
 						</div> 
-						<div class="contenedor-input-label">
-							<label for="proveedor-producto"><span class="required-color">*</span>Proveedor:</label>
-							<input class="input-primary" type="text" id="proveedor-producto" name="proveedor-producto" required><br>
+                        <div class="contenedor-input-label">
+                            <label for="categoria-producto"><span class="required-color">*</span>Categoria:</label>
+                            <select class="input-primary" name="categoria-producto" id="categoria-producto" required><br>
+                                 <option value="1">Categoria 1</option>
+                                 <option value="2">Categoria 2</option>
+                                 <option value="3">Categoria 3</option>
+                            </select>
 						</div> 
+						<div class="contenedor-input-label">
+                            <label for="proveedor-producto"><span class="required-color">*</span>Proveedora:</label>
+                            <select class="input-primary" name="Proveedora" id="proveedora-producto" required><br>
+                                 <option value="1">Proveedora 1</option>
+                                 <option value="2">Proveedora 2</option>
+                                 <option value="3">Proveedora 3</option>
+                            </select>
+						</div> 
+                        <div class="contenedor-input-label">
+							<label for="precio-unidad-producto"><span class="required-color">*</span>Precio por unidad:</label>
+							<input class="input-primary input-price" type="text" id="precio-unidad-producto" name="precio-unidad-producto" required><br>
+						</div>
+                        <div class="contenedor-input-label">
+							<label for="precio-paquete-producto"><span class="required-color">*</span>Precio por paquete:</label>
+							<input class="input-primary input-price" type="text" id="precio-paquete-producto" name="precio-paquete-producto" required><br>
+						</div>
 						<div class="contenedor-input-label">
 							<label for="fecha-entrada-producto"><span class="required-color">*</span>Fecha entrada:</label>
 							<input class="input-primary" type="date" id="fecha-entrada-producto" name="fecha-entrada-producto" required><br>
@@ -96,7 +116,7 @@
 						</div> 
 						<div class="contenedor-input-label">
 							<label for="cantidad"><span class="required-color">*</span>Cantidad:</label>
-							<input class="input-primary" type="text" id="cantidad" name="cantidad" required><br>
+							<input class="input-primary input-cantidad" type="number" id="cantidad" name="cantidad" required><br>
 						</div> 
                         <input type="submit" id="registrar" class="button-primary" value="Registrar">
                     </form>                   
@@ -124,9 +144,6 @@
 							<td class="td-primary">
 								<label>Unidad por paquete<span class="icon-filter"></span></label>
 							</td>
-							<td class="td-primary">
-								<label>Pedidos<span class="icon-filter"></span></label>
-							</td>
 						</tr>
 						<tr class="bordebajo_otros">
 							<td class="td-secondary">0001</td>
@@ -144,9 +161,6 @@
 							</td>
 							<td class="td-secondary">
 								<label> 100x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>2</label>
 							</td>
 						</tr>
 						<tr class="bordebajo_otros">
@@ -166,9 +180,6 @@
 							<td class="td-secondary">
 								<label>50x1</label>
 							</td>
-							<td class="td-secondary">
-								<label>3</label>
-							</td>
 						</tr>
 						<tr class="bordebajo_otros" >
 							<td class="td-secondary">0003</td>
@@ -186,9 +197,6 @@
 							</td>
 							<td class="td-secondary">
 								<label>20x1</label>
-							</td>
-							<td class="td-secondary">
-								<label>1</label>
 							</td>
 						</tr>
 						<tr class="bordebajo_otros">
@@ -208,9 +216,6 @@
 							<td class="td-secondary">
 								<label>10x1</label>
 							</td>
-							<td class="td-secondary">
-								<label>1</label>
-							</td>
 						</tr>
 						<tr class="bordebajo_otros">
 							<td class="td-secondary">0005</td>
@@ -229,24 +234,17 @@
 							<td class="td-secondary">
 								<label>100x1</label>
 							</td>
-							<td class="td-secondary">
-								<label>2</label>
-							</td>
 						</tr>	
 					</table>
 					<a href="conexion_pro.php">Tabla</a>   
 				</div>
 			</section>    
 		</main>
-	       <footer class="site-footer">
-		       <p>
-			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
-		       </p>
-	           <a href="">Privacidad</a>
-	           <a href="">Terminos</a>
-	           <a href="">Ayuda</a>
-	       </footer>
-	    </div> 
+        <footer class="site-footer">
+            <p>
+              <span>&copy;2020</span> Inventario Adaptable - <span>Comercializadora y distribuidora Martinez</span>
+            </p>
+        </footer>
     </div>
 </body>
 </html>

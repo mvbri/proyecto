@@ -76,8 +76,16 @@
 							<input class="input-primary" type="text" id="nombre-producto-expirado" name="nombre-producto-expirado" required><br>
 						</div>
                         <div class="contenedor-input-label">
+                            <label for="categoria-producto"><span class="required-color">*</span>Categoria:</label>
+                            <select class="input-primary" name="categoria-producto" id="categoria-producto" required><br>
+                                 <option value="1">Categoria 1</option>
+                                 <option value="2">Categoria 2</option>
+                                 <option value="3">Categoria 3</option>
+                            </select>
+						</div>
+                        <div class="contenedor-input-label">
 							<label for="fecha-entrada"><span class="required-color">*</span>Fecha entrada:</label>
-							<input class="input-primary" type="text" id="fecha-entrada" name="fecha-entrada" required><br>
+							<input class="input-primary" type="date" id="fecha-entrada" name="fecha-entrada" required><br>
 						</div> 
                         <div class="contenedor-input-label">
 							<label for="tiempo-almacenamiento"><span class="required-color">*</span>Tiempo almacenamiento max:</label>
@@ -85,7 +93,7 @@
 						</div>
                         <div class="contenedor-input-label">
 							<label for="vencimiento"><span class="required-color">*</span>Vencimiento:</label>
-							<input class="input-primary" type="text" id="vencimiento" name="vencimiento" required><br>
+							<input class="input-primary" type="date" id="vencimiento" name="vencimiento" required><br>
 						</div>  
                         <div class="contenedor-input-label">
 							<label for="estado"><span class="required-color">*</span>Estado:</label>
@@ -96,15 +104,11 @@
 				</div>
 			</section>
 		</main>
-	       <footer class="site-footer">
-		       <p>
-			     <span>&copy;2020</span> Inventario Adaptable - <span>Todos los derechos reservados</span>
-		       </p>
-	           <a href="">Privacidad</a>
-	           <a href="">Terminos</a>
-	           <a href="">Ayuda</a>
-	       </footer>
-	    </div> 
+	    <footer class="site-footer">
+		    <p>
+			    <span>&copy;2020</span> Inventario Adaptable - <span>Comercializadora y distribuidora Martinez</span>
+		    </p>
+	    </footer>
     </div>
 </body>
 </html>

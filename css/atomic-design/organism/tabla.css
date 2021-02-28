@@ -1,5 +1,5 @@
 .table-primary {
-    width: 100%;
+    width: auto;
     background: var(--secondary-bg-color);
     display: grid;
     margin: 0 auto;
@@ -10,7 +10,57 @@
 }
 
 
-
-.button-primary:hover {
-    opacity: .4;
+.table-gestion {
+    width: 100%;
 }
+
+
+.table-categorias {
+    width: 50%;
+}
+
+
+.table-productos {
+    display: grid;
+}
+
+
+.td-primary {
+    position: relative;
+}
+
+
+.td-inf-encargado {
+    background: var(--main-bg-button-color);
+}
+
+
+.td-inf-encargado-name {
+    border-radius: 10px 0 0 10px;
+}
+
+
+.td-inf-encargado-ci {
+    border-radius: 0 10px 10px 0;
+}
+
+
+.fa-edit {
+    position: absolute;
+    right: 20%;
+    font-size: 12px;
+}
+
+
+.fa-times {
+    position: absolute;
+    right: 9%;
+    font-size: 12px;
+
+}
+
+
+
+
+
+
