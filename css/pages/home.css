@@ -190,6 +190,12 @@ input[type="search"]:focus{
 }
 
 
+.container-information-user {
+    min-width: 500px;
+    left: 22%;
+}
+
+
 
 /*---Diseño responsive------*/
 
@@ -332,6 +338,12 @@ input[type="search"]:focus{
     }
 
 
+    .container-information-user {
+        min-width: 300px;
+        left: 1%;
+    }
+
+
 }
 
 
@@ -469,6 +481,12 @@ input[type="search"]:focus{
         font-size: 10px;
     }
 
+
+    .container-information-user {
+        min-width: 300px;
+        left: 10%;
+    }
+
 }
 
 
@@ -571,6 +589,12 @@ input[type="search"]:focus{
         bottom: -178%;
     }
 
+
+    .container-information-user {
+        min-width: 400px;
+        left: 10%;
+    }
+
 }
 
 
@@ -666,6 +690,12 @@ input[type="search"]:focus{
         font-size: 12px;
     }
 
+
+    .container-information-user {
+        min-width: 400px;
+        left: 10%;
+    }
+
 }
 
 
@@ -747,6 +777,12 @@ input[type="search"]:focus{
 
     .anchor-menu-secondary {
         font-size: 12px;
+    }
+
+
+    .container-information-user {
+        min-width: 500px;
+        left: 9%;
     }
 
 }
