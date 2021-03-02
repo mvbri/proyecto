@@ -1,28 +1,4 @@
-.table-primary {
-    width: auto;
-    background: var(--secondary-bg-color);
-    display: grid;
-    margin: 0 auto;
-    border-collapse: collapse;
-    table-layout: fixed;
-    padding: 10px;
-    border-radius: 8px;
-}
 
-
-.table-gestion {
-    width: 100%;
-}
-
-
-.table-categorias {
-    width: 50%;
-}
-
-
-.table-productos {
-    display: grid;
-}
 
 
 .td-primary {
