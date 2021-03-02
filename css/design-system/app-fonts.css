@@ -8,15 +8,15 @@
 
 
 @font-face {
-    font-family: 'Caveat';
-    src: url('../../fonts/Caveat-Regular.ttf') format('ttf');
+    font-family: 'NotoSansJP';
+    src: url('../../fonts/NotoSansJP-Regular.otf');
 }
 
 
 :root {
-    --font-primary: 'Caveat';
-    --font-secondary: 'Caveat';
+    --font-primary: 'NotoSansJP';
+    --font-secondary: 'NotoSansJP';
     --font-size-sm: 13px;
-    --font-size-md: 14px;
+    --font-size-md: 12px;
     --font-size-lg: 22px;
 }
