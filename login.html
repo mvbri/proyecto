@@ -35,11 +35,11 @@
             </form>
             <form id="formulario_registro" method="GET"  action="insertar_registro.php" class="formulario_registro formulario_correcto">
                 <h2>Regístrarse</h2>
-                <div class="container-input-login">
+                <div class="container-input-login" id="grupo_nombre_c">
                     <span class="required">*</span><input class="form-input" type="text" name="nombre_c" id="nombre_c" placeholder="Nombre completo" required>
                     <i class="login-input-validacion fas fa-times-circle"></i>
                 </div>
-                <div class="container-input-login">   
+                <div class="container-input-login" id="grupo_correo">   
                     <span class="required">*</span><input class="form-input" type="email" name="correo" id="correo" placeholder="Ingrese correo" required>
                     <i class="login-input-validacion fas fa-times-circle"></i>
                 </div>
@@ -51,7 +51,7 @@
                     </div>
                     <p class="input-text-error">El usuario tiene que ser de 4 a 16 dígito y solo puede contener números, letras y el caracter guión bajo '_'</p>
                 </div>
-                <div class="container-input-login">
+                <div class="container-input-login" id="grupo_password">
                     <span class="required">*</span><input class="form-input" type="password" name="password" id="password" placeholder="Ingrese contraseña" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" required>
                     <i class="login-input-validacion fas fa-times-circle"></i>
                 </div>
