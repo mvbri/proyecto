@@ -71,8 +71,27 @@ body{
 }
 
 
-.formulario_correcto >  .fa-times-circle {
+.fa-check-circle {
+    position: absolute;
+    right: 3%;
+    top: 55%;
+    opacity: 0;
+ }
+
+
+.formulario_correcto >  .fa-check-circle {
     color: #1ed12d;
+    opacity: 1;
+}
+
+
+.formulario_grupo_incorrecto > .form-input  {
+    border: 1px solid red !important;
+}
+
+
+.formulario_grupo_incorrecto > .fa-times-circle  {
+    color: red;
     opacity: 1;
 }
 
