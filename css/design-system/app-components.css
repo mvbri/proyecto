@@ -70,6 +70,7 @@
     max-width: 400px;
     display: grid;
     gap: .5em;
+    margin-bottom: 5em;
 }
 
 
@@ -85,6 +86,8 @@
 
 .contenedor-input-label {
     padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 

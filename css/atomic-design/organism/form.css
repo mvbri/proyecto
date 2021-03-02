@@ -1,5 +1,35 @@
 
 
+.container-form {
+    display: grid;
+    gap: 2em;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5em;
+    max-width: 500px;
+    max-height: 650px;
+    margin-bottom: 4em;
+}
+
+
+.container-form-3 {
+    display: grid;
+    gap: 2em;
+    position: relative;
+    top: 21%;
+    left: 0;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2em;
+    min-width: 500px;
+}
+
+
 
 .input-primary:focus {
     border: 1px solid var(--main-bg-button-color);

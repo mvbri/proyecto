@@ -37,6 +37,8 @@
 
 .td-inf-encargado-name {
     border-radius: 10px 0 0 10px;
+    width: 100%;
+    min-width: 122px;
 }
 
 
@@ -48,15 +50,34 @@
 .fa-edit {
     position: absolute;
     right: 20%;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 
 .fa-times {
     position: absolute;
-    right: 9%;
-    font-size: 12px;
+    right: 6%;
+    font-size: 9px;
 
+}
+
+
+.table-grid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+.table-grid-column {
+   display: grid;
+   gap: 1em;
+   padding: 6px;
+}
+
+
+.celda-relative {
+    position: relative;
+    padding: 10px;
 }
 
 

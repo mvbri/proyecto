@@ -63,9 +63,39 @@ body{
 }
 
 
-.fa-check-circle {
+.fa-times-circle {
    position: absolute;
-   z-index: 1000;
+   right: 3%;
+   top: 55%;
+   opacity: 0;
+}
+
+
+.formulario_correcto >  .fa-times-circle {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+
+.formulario_incorrecto > .fa-times-circle {
+    color: red;
+    opacity: 1;
+}
+
+.formulario_incorrecto > .form-input {
+    border: 1px solid red !important;
+}
+
+
+.input-text-error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+
+.input-text-error-activo {
+    display: block;
 }
 
 
