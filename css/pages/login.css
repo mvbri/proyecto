@@ -96,11 +96,6 @@ body{
 }
 
 
-.formulario_incorrecto > .fa-times-circle {
-    color: red;
-    opacity: 1;
-}
-
 .formulario_incorrecto > .form-input {
     border: 1px solid red !important;
 }

@@ -84,11 +84,13 @@ const validar_formulario = (e) => {
             document.getElementById('grupo_usuario').classList.add('formulario_correcto');
             document.querySelector('#grupo_usuario i').classList.remove('fa-times-circle');
             document.querySelector('#grupo_usuario i').classList.add('fa-check-circle');
+            document.querySelector('#grupo_usuario_padre .input-text-error').classList.remove('input-text-error-activo');
            } else {
               document.getElementById('grupo_usuario').classList.add('formulario_grupo_incorrecto');
               document.getElementById('grupo_usuario').classList.remove('formulario_correcto');
             document.querySelector('#grupo_usuario i').classList.add('fa-times-circle');
             document.querySelector('#grupo_usuario i').classList.remove('fa-check-circle');
+            document.querySelector('#grupo_usuario_padre .input-text-error').classList.add('input-text-error-activo');
            }
        break;
        case 'correo':
@@ -97,11 +99,13 @@ const validar_formulario = (e) => {
             document.getElementById('grupo_correo').classList.add('formulario_correcto');
             document.querySelector('#grupo_correo i').classList.remove('fa-times-circle');
             document.querySelector('#grupo_correo i').classList.add('fa-check-circle');
+            document.querySelector('#grupo_correo_padre .input-text-error').classList.remove('input-text-error-activo');
            } else {
               document.getElementById('grupo_correo').classList.add('formulario_grupo_incorrecto');
               document.getElementById('grupo_correo').classList.remove('formulario_correcto');
             document.querySelector('#grupo_correo i').classList.add('fa-times-circle');
             document.querySelector('#grupo_correo i').classList.remove('fa-check-circle');
+            document.querySelector('#grupo_correo_padre .input-text-error').classList.add('input-text-error-activo');
            }
        break;
        case 'password':
@@ -110,11 +114,13 @@ const validar_formulario = (e) => {
             document.getElementById('grupo_password').classList.add('formulario_correcto');
             document.querySelector('#grupo_password i').classList.remove('fa-times-circle');
             document.querySelector('#grupo_password i').classList.add('fa-check-circle');
+            document.querySelector('#grupo_password_padre .input-text-error').classList.remove('input-text-error-activo');
            } else {
               document.getElementById('grupo_password').classList.add('formulario_grupo_incorrecto');
               document.getElementById('grupo_password').classList.remove('formulario_correcto');
             document.querySelector('#grupo_password i').classList.add('fa-times-circle');
             document.querySelector('#grupo_password i').classList.remove('fa-check-circle');
+            document.querySelector('#grupo_password_padre .input-text-error').classList.add('input-text-error-activo');
            }
        break;
        case 'nombre_c':
@@ -123,16 +129,19 @@ const validar_formulario = (e) => {
             document.getElementById('grupo_nombre_c').classList.add('formulario_correcto');
             document.querySelector('#grupo_nombre_c i').classList.remove('fa-times-circle');
             document.querySelector('#grupo_nombre_c i').classList.add('fa-check-circle');
+            document.querySelector('#grupo_nombre_c_padre .input-text-error').classList.remove('input-text-error-activo');
            } else {
               document.getElementById('grupo_nombre_c').classList.add('formulario_grupo_incorrecto');
               document.getElementById('grupo_nombre_c').classList.remove('formulario_correcto');
             document.querySelector('#grupo_nombre_c i').classList.add('fa-times-circle');
-            document.querySelector('#grupo_nombre_c i').classList.remove('fa-check-circle');
+            document.querySelector('#grupo_nombre_c_padre .input-text-error').classList.add('input-text-error-activo');
            }
 
        break;
     }
 }
+
+
 
 
 inputs.forEach( (input) =>{
