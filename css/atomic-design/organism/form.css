@@ -53,3 +53,8 @@
 .input-cantidad {
    max-width: 80px;
 }
+
+
+.form-password-change {
+    display: grid;
+}
